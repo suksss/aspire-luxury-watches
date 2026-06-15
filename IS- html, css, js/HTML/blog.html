@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="Author" content="Prasansha Yadav" />
+    <meta name="Blog" content="Html document" />
+    <meta name="keywords" content="HTML" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <style>
+        body {
+            background-color: #d9d1ac;
+        }
+
+        /* Main content styles */
+        main {
+            margin-top: 80px;
+            padding: 2px 5%;
+        }
+
+        /* Hero section styles */
+        .main-hero-section {
+            background-color: #24472f;
+            padding: 4px;
+            margin-bottom: 3px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+        }
+
+        .main-hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 800px;
+        }
+
+        .main-hero-title {
+            font-size: 56px;
+            color: #d9d1ac;
+            margin-bottom: 8px;
+            font-family: "Bodoni Moda", serif;
+        }
+
+        .main-hero-subtitle {
+            font-size: 20px;
+            color: #d9d1ac;
+            margin-bottom: 32px;
+        }
+
+        /* Table styles */
+        .products-table {
+            width: 100%;
+            border-spacing: 40px;
+        }
+
+        .products-row {
+            display: table-row;
+        }
+
+        .products-cell {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        /* Product card styles */
+        .products-card {
+            background-color: #152f1e;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 15px #0000001a;
+        }
+
+        .products-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .products-image-container {
+            position: relative;
+            padding-top: 100%;
+            overflow: hidden;
+        }
+
+        .products-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .products-card:hover .products-image {
+            transform: scale(1.05);
+        }
+
+        .products-info {
+            padding: 24px;
+        }
+
+        .products-title {
+            color: #d9d1ac;
+            font-size: 20px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .products-description {
+            color: #d9d1ac;
+            opacity: 0.9;
+            margin-bottom: 24px;
+        }
+
+        /* Button styles */
+        .read-more-link {
+            display: inline-block;
+            cursor: pointer;
+            color: #d9d1ac;
+            background-color: #3e6948;
+            padding: 3px 13px;
+            border-radius: 3px;
+            margin-top: 12px;
+            text-decoration: none;
+        }
+
+        .content {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <div class="logo-container">
+                <div class="logo">ASPIRE</div>
+                <div class="watches-text">WATCHES</div>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="../index.html" class="link">Home</a></li>
+                <li><a href="product.html" class="link">Product</a></li>
+                <li><a href="blog.html" class="link active">Blog</a></li>
+                <li><a href="research.html" class="link">Research</a></li>
+                <li><a href="aboutus.html" class="link">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="main-hero-section">
+            <img src="../Images/blog/blogimage1.jpg" alt="Luxury Watch Detail" class="main-hero-image" />
+            <div class="main-hero-content">
+                <h1 class="main-hero-title">The Blog</h1>
+                <p class="main-hero-subtitle">Timeless elegance of premium timepieces</p>
+            </div>
+        </section>
+
+        <table class="products-table">
+            <tr class="products-row">
+                <td class="products-cell">
+                    <div class="products-card">
+                        <div class="products-image-container">
+                            <img src="../Images/blog/blogimage2.jpg" alt="Luxury Watch" class="products-image" />
+                        </div>
+                        <div class="products-info">
+                            <h3 class="products-title">
+                                Why Technology is Necessary for Growth?
+                            </h3>
+                            <p class="products-description">
+                                Technological progress allows for the more efficient production of better goods and
+                                services, which is essential for prosperity. Explore how advancements in technology
+                                drive economic growth and innovation.
+                            </p>
+                            <a href="javascript:void(0);" class="read-more-link"
+                                onclick="toggleContent('content1', this)">Read
+                                More</a>
+                            <div id="content1" class="content">
+                                <p class="products-description">
+                                    The application of complexity science tools to the study of society allows for the
+                                    analysis of phenomena that have been hard to identify and analyze with more
+                                    traditional tools.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="products-cell">
+                    <div class="products-card">
+                        <div class="products-image-container">
+                            <img src="../Images/blog/blogimage3.jpg" alt="Premium Watch" class="products-image" />
+                        </div>
+                        <div class="products-info">
+                            <h3 class="products-title">The Impact of Technology on the Watch Industry</h3>
+                            <p class="products-description">
+                                Watches are timeless accessories that combine convenience, functionality, and style.
+                                Learn more about their historical and modern significance.
+                            </p>
+                            <a href="javascript:void(0);" class="read-more-link"
+                                onclick="toggleContent('content2', this)">Read
+                                More</a>
+                            <div id="content2" class="content">
+                                <p class="products-description">
+                                    Positively, technology has enhanced watch functionality with features like GPS and
+                                    heart rate monitors, improved production efficiency, and enabled innovative designs.
+                                    E-commerce has expanded global reach, and customization options have increased
+                                    customer satisfaction. However, it also brings challenges such as increased
+                                    competition, dependency on technology, environmental concerns from electronic waste,
+                                    a decline in traditional craftsmanship, and shorter product lifecycles. While
+                                    technology drives growth and innovation, it also requires careful management to
+                                    address these challenges.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="products-cell">
+                    <div class="products-card">
+                        <div class="products-image-container">
+                            <img src="../Images/blog/blogimage4.jpg" alt="Designer Watch" class="products-image" />
+                        </div>
+                        <div class="products-info">
+                            <h3 class="products-title">Technological Advancements in Watch Design and Sales</h3>
+                            <p class="products-description">
+                                Explore why luxury watches can be a stable and lucrative investment, even during
+                                economic downturns.
+                            </p>
+                            <a href="javascript:void(0);" class="read-more-link"
+                                onclick="toggleContent('content3', this)">Read
+                                More</a>
+                            <div id="content3" class="content">
+                                <p class="products-description">
+                                    Technology has enabled the creation of innovative watch designs using advanced
+                                    materials and techniques. It has also facilitated the growth of e-commerce, allowing
+                                    watch brands to reach a global audience and offer personalized shopping experiences.
+                                    These advancements have transformed the industry, making it more dynamic and
+                                    competitive. While technology drives growth and innovation, it also requires careful
+                                    management to ensure sustainable development and customer satisfaction.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <table width="100%" cellpadding="20" cellspacing="0">
+            <tr>
+                <!-- Newsletter Column -->
+                <td width="33%" valign="top" style="padding-left: 40px">
+                    <h2>Subscribe to our Newsletter</h2>
+                    <form class="subscribe-form" onsubmit="return validateEmail()">
+                        <input type="text" id="email" placeholder="Enter your email address"
+                            style="width: 100%; padding: 10px; margin-bottom: 10px" />
+                        <button type="submit" class="subscribe-button">
+                            Subscribe
+                        </button>
+                        <p id="error-message" style="color: red; display: none">
+                            Please enter a valid email address.
+                        </p>
+                    </form>
+                </td>
+
+                <!-- Useful Links Column -->
+                <td width="33%" valign="top" align="center">
+                    <h2>USEFUL LINKS</h2>
+                    <div style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                  ">
+                        <a href="product.html" class="navigation-link">Products</a>
+                        <a href="blog.html" class="navigation-link">Blog</a>
+                        <a href="research.html" class="navigation-link">Research</a>
+                        <a href="aboutus.html" class="navigation-link">About us</a>
+                    </div>
+                </td>
+
+                <!-- Contact Column -->
+                <td width="33%" valign="top" align="center">
+                    <h2>CONTACT</h2>
+                    <div style="
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+                  ">
+                        <a href="#" class="navigation-link">Instagram</a> |
+                        <a href="#" class="navigation-link">Facebook</a> |
+                        <a href="#" class="navigation-link">Linkedin</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center; padding-top: 80px">
+                    <p style="margin: 0">
+                        &copy; 2025 AspireWatches. All rights reserved.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <script>
+        // Toggle content visibility for "Read More" links
+        function toggleContent(id, link) {
+            var content = document.getElementById(id); // Get the content element by ID
+            var allContents = document.querySelectorAll(".content"); // Get all content elements
+            var allLinks = document.querySelectorAll(".read-more-link"); // Get all "Read More" links
+
+            // Hide all content elements except the one being toggled
+            allContents.forEach(function (item) {
+                if (item !== content) {
+                    item.style.display = "none"; // Hide the content
+                }
+            });
+
+            // Reset all "Read More" links except the one being toggled
+            allLinks.forEach(function (item) {
+                if (item !== link) {
+                    item.textContent = "Read More"; // Reset link text to "Read More"
+                }
+            });
+
+            // Toggle the visibility of the content element
+            if (content.style.display === "block") {
+                content.style.display = "none"; // Hide the content
+                link.textContent = "Read More"; // Reset link text to "Read More"
+            } else {
+                content.style.display = "block"; // Show the content
+                link.textContent = "Show Less"; // Change link text to "Show Less"
+            }
+        }
+    </script>
+    <script src="../JAVASCRIPT/script.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>

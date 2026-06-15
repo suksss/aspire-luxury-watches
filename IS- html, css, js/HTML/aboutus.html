@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="Author" content="Sukrish Shrestha" />
+    <meta name="Description" content="Html document" />
+    <meta name="keywords" content="HTML" />
+    <title>About Aspire</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <style>
+      /* Body styling */
+      body {
+        background: linear-gradient(to bottom right, #0a1f14 0%, #000000 100%);
+        /* This linear gradient creates a smooth transition from a dark green (#0a1f14) 
+            at the top left to black (#000000) at the bottom right */
+        color: #d9d1ac;
+        min-height: 100%;
+      }
+
+      /* Container styling */
+      .container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 32px;
+        background: linear-gradient(to bottom right, #0a1f14 0%, #000000 100%);
+      }
+
+      /* Section styling */
+      section {
+        margin-bottom: 96px;
+        padding: 48px;
+        background: linear-gradient(to bottom left, #0a1f14 0%, #152f1e 100%);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px #00000033;
+      }
+
+      /* Heading styling */
+      h1 {
+        font-size: 40px;
+        color: #d9d1ac;
+        margin-bottom: 32px;
+        text-align: center;
+        position: relative;
+        /* This sets the element's position relative to its normal position, 
+            allowing for adjustments with top, right, bottom, and left properties */
+      }
+
+      /* After element for the <h1> element */
+      h1::after {
+        /* Add a horizontal line below the text */
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color: #3e6948;
+        /* Add a margin of 15px to the top and bottom */
+        margin: 15px auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <nav class="nav">
+      <div class="nav-logo">
+        <div class="logo-container">
+          <div class="logo">ASPIRE</div>
+          <div class="watches-text">WATCHES</div>
+        </div>
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <!-- The "../" in the href attribute moves up one directory level.-->
+          <li><a href="../index.html" class="link">Home</a></li>
+          <li><a href="product.html" class="link">Product</a></li>
+          <li><a href="blog.html" class="link">Blog</a></li>
+          <li><a href="research.html" class="link">Research</a></li>
+          <li><a href="aboutus.html" class="link active">About us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- About Section -->
+      <section>
+        <div class="about">
+          <div class="about-text">
+            <h1>About Aspire</h1>
+            <p>
+              At Aspire Watches, we offer a wide variety of high-quality
+              timepieces to suit every style and occasion. Our collection ranges
+              from classic designs to the latest trends, all crafted with
+              precision and attention to detail. We pride ourselves on
+              exceptional customer service and a seamless shopping experience.
+              Whether you're looking for a sophisticated dress watch, a rugged
+              sports watch, or a timeless everyday piece, Aspire Watches has
+              something for everyone. We believe a watch is more than just a
+              tool for telling time; it's an expression of individuality and
+              craftsmanship.
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="../IMAGES/ABOUT US/logo.png"
+              alt="Aspire Logo"
+              class="logo-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section>
+        <h1>Meet Our Team</h1>
+        <div class="team-flex">
+          <a href="portfoliosuks.html" class="team-member">
+            <div class="member-image-container">
+              <div class="member-image">
+                <img
+                  src="../IMAGES/ABOUT US/sukrish.jpg"
+                  alt="Sukrish Shrestha"
+                />
+              </div>
+            </div>
+            <h3 class="member-name">Sukrish Shrestha</h3>
+            <p class="member-title">Project Manager</p>
+          </a>
+          <a href="portfoliosri.html" class="team-member">
+            <div class="member-image-container">
+              <div class="member-image">
+                <img
+                  src="../IMAGES/ABOUT US/srijan.jpg"
+                  alt="Srijan Shrestha"
+                />
+              </div>
+            </div>
+            <h3 class="member-name">Srijan Shrestha</h3>
+            <p class="member-title">Creative Director</p>
+          </a>
+          <a href="portfoliorud.html" class="team-member">
+            <div class="member-image-container">
+              <div class="member-image">
+                <img
+                  src="../IMAGES/ABOUT US/rudra.jpg"
+                  alt="Rudra Bahadur Sunuwar"
+                />
+              </div>
+            </div>
+            <h3 class="member-name">Rudra Bahadur Sunuwar</h3>
+            <p class="member-title">Designer</p>
+          </a>
+          <a href="portfoliopra.html" class="team-member">
+            <div class="member-image-container">
+              <div class="member-image">
+                <img
+                  src="../IMAGES/ABOUT US/prasnsha.jpg"
+                  alt="Prasansha Yadav"
+                />
+              </div>
+            </div>
+            <h3 class="member-name">Prasansha Yadav</h3>
+            <p class="member-title">Strategy Director</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section>
+        <div class="contact">
+          <h1>Contact Us</h1>
+          <form id="contactForm">
+            <div class="form-group name-group">
+              <input type="text" id="firstName" placeholder="First Name" />
+              <input type="text" id="lastName" placeholder="Last Name" />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Email address" />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                placeholder="Write a Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popupModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <!-- The &times; HTML entity represents the multiplication sign (×) -->
+        <!-- It is often used as a close button symbol in web design -->
+        <p id="popupMessage"></p>
+      </div>
+    </div>
+    <footer>
+      <table width="100%" cellpadding="20" cellspacing="0">
+        <tr>
+          <!-- Newsletter Column -->
+          <td width="33%" valign="top" style="padding-left: 40px">
+            <h2>Subscribe to our Newsletter</h2>
+            <!-- Subscription form with an onsubmit event to validate email -->
+            <form class="subscribe-form" onsubmit="return validateEmail()">
+              <input
+                type="text"
+                id="email"
+                placeholder="Enter your email address"
+                style="width: 100%; padding: 10px; margin-bottom: 10px"
+              />
+
+              <button type="submit" class="subscribe-button">Subscribe</button>
+            </form>
+          </td>
+
+          <!-- Useful Links Column -->
+          <td width="33%" valign="top" align="center">
+            <h2>USEFUL LINKS</h2>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <a href="product.html" class="link">Products</a>
+              <a href="blog.html" class="link">Blog</a>
+              <a href="research.html" class="link">Research</a>
+              <a href="aboutus.html" class="link">About us</a>
+            </div>
+          </td>
+
+          <!-- Contact Column -->
+          <td width="33%" valign="top" align="center">
+            <h2>CONTACT</h2>
+            <div
+              style="
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+              "
+            >
+              <a href="#" class="link">Instagram</a> |
+              <a href="#" class="link">Facebook</a> |
+              <a href="#" class="link">Linkedin</a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align: center; padding-top: 80px">
+            <p style="margin: 0">
+              &copy; 2025 AspireWatches. All rights reserved.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </footer>
+
+    <script>
+      // Function to show a popup with a given message
+      function showPopup(message) {
+        // Get the modal element by its ID 'popupModal'
+        const popupModal = document.getElementById("popupModal");
+        // Get the paragraph element by its ID 'popupMessage' to display the message
+        const popupMessage = document.getElementById("popupMessage");
+        // Set the text content of the paragraph to the provided message
+        popupMessage.textContent = message;
+        // Display the modal by setting its display style to 'block'
+        popupModal.style.display = "block";
+        /* Makes the modal visible and behave as a block-level element 
+        A block-level element starts on a new line and takes up the full width available.
+        It can contain other block-level elements and inline elements*/
+      }
+
+      // Add an event listener to the close button to close the modal when clicked
+      document
+        /* The querySelector method returns the first element within the document 
+        that matches the specified CSS selector
+        It allows you to select elements using any valid CSS selector, 
+        such as class, ID, or tag name*/
+        .querySelector(".close-btn")
+        /* Add an event listener to the selected element that listens for a "click" event
+        When the element is clicked, the specified function will be executed. */
+        .addEventListener("click", function () 
+        {
+          /* Select the element with the ID "popupModal" and set its display style to "none"
+        This hides the modal by removing it from the document flow and making it invisible */
+          document.getElementById("popupModal").style.display = "none";
+        });
+    </script>
+    <script src="../JAVASCRIPT/script.js"></script>
+  </body>
+</html>

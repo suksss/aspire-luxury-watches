@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!-- attribute are use to add more language -->
+<html lang="en">
+  <head>
+    <title>ASPIRE - LUXURY Watches</title>
+    <meta name="Author" content="Rudra Bahadur Sunwar" />
+    <meta name="Home" content="Html document" />
+    <meta name="keywords" content="HTML" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Top Categories Section Styling */
+      .categories .category-container {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 20px;
+      }
+
+      .category-card {
+        background: #152f1e;
+        color: #d9d1ac;
+        padding: 20px 40px;
+        border-radius: 8px;
+        text-align: center;
+        flex: 1;
+        max-width: 300px;
+      }
+
+      /* Reviews Section Styling */
+      .reviews .review-container {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 30px;
+      }
+
+      .review-card {
+        background: #152f1e;
+        padding: 30px;
+        border-radius: 8px;
+        color: #d9d1ac;
+        flex: 1;
+        max-width: 300px;
+        text-align: center;
+      }
+
+      /* Collection Section Styling */
+      .collection-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+      }
+
+      .products-column {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .info-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .product-card,
+      .info-card {
+        background: #152f1e;
+        border-radius: 8px;
+        color: #d9d1ac;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .product-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+      }
+
+      .info-btn,
+      .learn-more-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #3e6948;
+        color: #d9d1ac;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+
+      .info-btn:hover,
+      .learn-more-btn:hover {
+        background: #2d4f35;
+      }
+      a {
+    text-decoration: none;
+    }
+    .about-us {
+  background-color: #152f1e;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 12px rgb(0, 0, 0, 0.2);
+}
+    </style>
+  </head>
+
+  <body>
+    <nav class="nav">
+      <div class="nav-logo">
+        <div class="logo-container">
+          <div class="logo">ASPIRE</div>
+          <div class="watches-text">WATCHES</div>
+        </div>
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="index.html" class="link active">Home</a></li>
+          <li><a href="html/product.html" class="link">Product</a></li>
+          <li><a href="html/blog.html" class="link">Blog</a></li>
+          <li><a href="html/research.html" class="link">Research</a></li>
+          <li><a href="html/aboutus.html" class="link">About us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hero Section with Featured Product -->
+    <div class="hero" style="margin-top: 100px">
+      <a href="HTML/product.html" class="product-link" target="_blank">
+        <img
+          src="IMAGES/HOME/ezgif.com-resize.gif"
+          alt="Titan Stellar Unity Watch - Limited Edition"
+          style="display: block; margin: 0 auto; width: 100%"
+        />
+      </a>
+    </div>
+
+    <!-- Top Categories Section -->
+    <a href="HTML/product.html" class="review-link" target="_blank">
+      <section class="categories">
+        <h2 class="section-title">Top Categories</h2>
+        <div class="category-container">
+          <div class="category-card">Classic Collection</div>
+          <div class="category-card">Luxury Collection</div>
+          <div class="category-card">Limited Series</div>
+        </div>
+      </section>
+    </a>
+
+    <!-- Reviews Section -->
+    <a href="HTML/aboutus.html" class="review-link" target="_blank">
+      <section class="reviews">
+        <h1 class="section-title" style="color: #152f1e;">Reviews</h1>
+        <div class="review-container">
+          <!-- Review Card 1 -->
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Exceptional quality and stunning design. Aspire watches exceed
+              all expectations."
+            </p>
+          </div>
+          <!-- Review Card 2 -->
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              "The perfect blend of sophistication and functionality. Highly
+              recommended!"
+            </p>
+          </div>
+          <!-- Review Card 3 -->
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Outstanding craftsmanship and excellent customer service."</p>
+          </div>
+        </div>
+      </section>
+    </a>
+
+    <!-- Collection Section -->
+    <div class="collection-container">
+      <h2 class="collection-title">Our Collection</h2>
+      <div class="collection-wrapper">
+        <!-- Products Column -->
+        <div class="products-column">
+          <!-- Product Card -->
+          <a href="html/product.html" class="product-link">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/home/prod.webp"
+                  alt="Titan Stellar Unity Watch"
+                  style="width: 100%; height: 100%"
+                />
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">Speedmaster 38</h3>
+                <div class="product-badge">Limited Edition</div>
+                <p class="product-description">
+                  A masterpiece of horological excellence featuring a stunning
+                  starlit dial.
+                </p>
+                <div class="product-footer">
+                  <p class="product-price">$100,000.00</p>
+                  <span class="product-btn">View Details</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Research Info Card -->
+          <div class="info-card research">
+            <h2 class="info-title">Research</h2>
+            <div class="info-content">
+              <p>
+                Delve into our extensive research on horological advancements
+                and technologies. Stay informed about the latest in the watch
+                industry.
+              </p>
+              <a href="html/research.html" class="info-btn">Discover More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info Column -->
+        <div class="info-column">
+          <!-- About Us Info Card -->
+          <div class="about-us">
+            <h2 class="about-us-title">About Us</h2>
+            <p class="about-us-content">
+              Discover our story of crafting exceptional timepieces that blend
+              tradition with innovation. We're dedicated to creating watches
+              that stand the test of time.
+            </p>
+            <a href="html/aboutus.html" class="learn-more-btn">Learn More</a>
+          </div>
+
+          <!-- Blog Info Card -->
+          <div class="info-card blog">
+            <h2 class="info-title">Blog</h2>
+            <div class="info-content">
+              <p>
+                Explore the latest trends, stories, and insights from the world
+                of luxury watches. Stay updated with our newest collections and
+                horological innovations.
+              </p>
+              <a href="html/blog.html" class="info-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="popular-search">
+      <h2 class="section-title">Popular Search</h2>
+      <div class="brand-flex">
+        <a href="html/product.html" class="brand-item" target="_blank">
+          <img src="IMAGES/HOME/iiii.png" alt="TITAN" class="brand-logo" />
+        </a>
+        <a href="html/product.html" class="brand-item" target="_blank">
+          <img src="IMAGES/HOME/omeg.jpeg" alt="OMEGA" class="brand-logo" />
+        </a>
+        <a href="html/product.html" class="brand-item" target="_blank">
+          <img src="IMAGES/HOME/iiiid.png" alt="HUBLOT" class="brand-logo" />
+        </a>
+      </div>
+    </section>
+    <footer>
+      <table width="100%" cellpadding="20" cellspacing="0">
+        <tr>
+          <!-- Newsletter Column -->
+          <td width="33%" valign="top" style="padding-left: 40px">
+            <h2>Subscribe to our Newsletter</h2>
+            <form class="subscribe-form" onsubmit="return validateEmail()">
+              <input
+                type="text"
+                id="email"
+                placeholder="Enter your email address"
+                style="width: 100%; padding: 10px; margin-bottom: 10px"
+              />
+              <button type="submit" class="subscribe-button">Subscribe</button>
+            </form>
+          </td>
+
+          <!-- Useful Links Column -->
+          <td width="33%" valign="top" align="center">
+            <h2>USEFUL LINKS</h2>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <a href="HTML/product.html" class="link">Products</a>
+              <a href="HTML/blog.html" class="link">Blog</a>
+              <a href="HTML/research.html" class="link">Research</a>
+              <a href="HTML/aboutus.html" class="link">About us</a>
+            </div>
+          </td>
+
+          <!-- Contact Column -->
+          <td width="33%" valign="top" align="center">
+            <h2>CONTACT</h2>
+            <div
+              style="
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+              "
+            >
+              <a href="#" class="link">Instagram</a> |
+              <a href="#" class="link">Facebook</a> |
+              <a href="#" class="link">Linkedin</a>
+            </div>
+          </td>
+        </tr>
+        <!-- Footer Bottom Row for Copyright Information -->
+        <tr>
+          <!-- Single Cell Spanning All Columns -->
+          <td colspan="3" style="text-align: center; padding-top: 80px">
+            <!-- Copyright Text -->
+            <p style="margin: 0">
+              &copy; 2025 AspireWatches. All rights reserved.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </footer>
+
+    <script src="JAVASCRIPT/script.js"></script>
+  </body>
+</html>

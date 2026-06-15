@@ -1,0 +1,1273 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #d9d1ac;
+  color: #0c1c12;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  height: 5%;
+  width: 100%;
+  background: #152f1e;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Categories Section */
+.categories {
+  padding: 80px 5%;
+  background: #24472f;
+}
+
+/* Section Title Styling */
+.section-title {
+  font-family: "Bodoni Moda", serif;
+  font-size: 40px;
+  color: #d9d1ac;
+  text-align: center;
+  margin-bottom: 58px;
+}
+
+
+
+/* Category Card Styling */
+.category-card {
+  background: #152f1e;
+  padding: 32px;
+  text-align: center;
+  color: #d9d1ac;
+  border-radius: 8px;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+/* Category Card Hover Effect */
+.category-card:hover {
+  transform: translateY(-10px);
+  background: #3e6948;
+}
+
+/* Product Container Styling */
+.product-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Product Link Styling */
+.product-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Product GIF Styling */
+.product-gif {
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Product GIF Hover Effect */
+.product-gif:hover {
+  transform: scale(1.02);
+}
+
+/* Product Card Styling */
+.product-card {
+  background-color: #152f1e;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Product Card Hover Effect */
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Product Image Container Styling */
+.product-image {
+  width: 100%;
+  height: 200px;
+  background-color: #24472f;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+/* Product Image Styling */
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Product Title Styling */
+.product-title {
+  color: #d9d1ac;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Product Description Styling */
+.product-description {
+  color: #d9d1ac;
+  margin-bottom: 15px;
+}
+
+/* Product Price Styling */
+.product-price {
+  color: #d9d1ac;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Product Button Styling */
+.product-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #d9d1ac;
+  color: #0c1c12;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Product Button Hover Effect */
+.product-btn:hover {
+  background-color: #c4bb98;
+  transform: translateY(-2px);
+}
+
+/* Blog Section Styling */
+.blog-section {
+  height: 50%;
+  background-color: #24472f;
+  padding: 30px;
+  /* Smooth transition effect for transform property */
+  transition: transform 0.3s ease;
+}
+
+/* Blog Section Hover Effect */
+.blog-section:hover {
+  transform: scale(1.02);
+  background-color: #1a3926;
+}
+
+/* Research Page Body Styling */
+body {
+  margin: 0;
+  font-family: "Verdana", sans-serif; 
+  background-color: #152f1e; 
+  color: #0c1c12; 
+}
+
+/* Research Page Container Styling */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  padding-top: 100px;
+  background-color: #152f1e; 
+  border-radius: 8px;
+  color: #d9d1ac; 
+}
+
+/* Research Page Title Styling */
+h1 {
+  text-align: center;
+  color: #3e6948; 
+  margin-top: 30px;
+}
+
+/* Research Page Content Styling */
+.content {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* Reference Section Styling */
+.reference-section {
+  margin-top: 30px;
+}
+
+/* Reference Image Container Styling */
+.reference-image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reference Image Styling */
+.reference-image-container img {
+  max-width: 100%;
+  max-height: 300px;
+  display: none;
+  border: 2px solid #24472f; 
+  border-radius: 8px;
+}
+
+/* Reference Image Display */
+.reference-image-container img.reference {
+  display: block;
+}
+
+/* Button Container Styling */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Button Styling */
+button {
+  background-color: #24472f; 
+  color: #d9d1ac; 
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition effect for background-color property */
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #3e6948;  /* Change background color on hover */
+}
+
+/* Button Link Styling */
+.button-container .link {
+  color: #3e6948; 
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold;
+}
+
+/* Button Link Hover Effect */
+.button-container .link:hover {
+  color: #24472f; 
+}
+
+/* About Section */
+.about {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.about-text {
+  padding: 32px;
+  border-radius: 8px;
+  background: #152f1e;
+  font-size: 20px;
+  flex: 1 1 50%;
+}
+
+.about-image {
+  width: 100%;
+  height: 400px;
+  background-color: #24472f; 
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 50%;
+}
+
+/* Logo Image Styling */
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Team Section flex Layout */
+.team-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 48px;
+  flex-wrap: nowrap;
+  padding: 0 16px;
+}
+
+/* Individual Team Member Styling */
+.team-member {
+  flex: 0 0 calc(25% - 18px); 
+  /* Ensure each team member takes up 25% of the container, accounting for the gap */
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;/* Inherit the color from the parent element */
+}
+
+/* Team Member Image Container Styling */
+.member-image-container {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  margin-bottom: 24px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Team Member Image Styling */
+.member-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #24472f; 
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Team Member Hover Effect */
+.team-member:hover .member-image-container {
+  transform: scale(1.05);
+}
+
+/* Team Member Name Styling */
+.member-name {
+  color: #d9d1ac; 
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+/* Team Member Title Styling */
+.member-title {
+  color: #3e6948; 
+  font-size: 18px;
+}
+
+/* Contact Section Styling */
+.contact {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 24px;
+}
+
+/* Input and Textarea Styling */
+input,
+textarea {
+  width: 100%;
+  padding: 16px;
+  background: #24472f; 
+  border: 1px solid #3e6948; 
+  border-radius: 6px;
+  color: #d9d1ac; 
+  margin-top: 8px;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #d9d1ac; 
+  background: #24472f; 
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #3e6948; 
+}
+
+/* Name Group Styling */
+.name-group {
+  display: flex;
+flex-wrap: wrap;
+gap: 16px;
+
+> * {
+  flex: 1 1 50%;
+}
+}
+/* Button Styling */
+button {
+  background: linear-gradient(to right, #3e6948 0%, #24472f 100%); 
+  color: #d9d1ac; 
+  padding: 16px 40px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #00000066;
+}
+
+/* Modal Content Styling */
+.modal-content {
+  background-color: #152f1e; 
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #3e6948; 
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  color: #d9d1ac; 
+}
+
+/* Close Button Styling */
+.close-btn {
+  color: #d9d1ac; 
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #3e6948; 
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Footer Section Styling */
+footer {
+  background: #0c1c12;
+  padding: 80px 5%;
+  color: #d9d1ac;
+}
+
+/* Footer Content Layout */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Form Input Styling */
+.footer-form input {
+  padding: 12.8px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background: #d9d1ac;
+  color: #0c1c12;
+}
+
+/* Footer Form Button Styling */
+.footer-form button {
+  padding: 12.8px 24%;
+  background: #3e6948;
+  border: none;
+  color: #d9d1ac;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;;
+}
+
+.footer-form button:hover {
+  background: #24472f;
+}
+
+/* Footer Link Styling */
+footer a {
+  text-decoration: none;
+  color: #d9d1ac;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #3e6948;
+}
+
+/* Subscribe Button Styling */
+.subscribe-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3e6948;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Navigation Bar Styling */
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  /*
+    This CSS rule applies a linear gradient background that transitions from #0c1c12 to #152f1e from left to right.
+  */
+  background: linear-gradient(to right, #0c1c12, #152f1e);
+  z-index: 100;
+  padding: 0 20px;
+  box-shadow: 0 4px 6px #0000004d;
+}
+
+/* Logo Container Styling */
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo Text Container Styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Logo Text Styling */
+.logo {
+  font-family: "Bodoni Moda", serif;
+  font-size: 40px;
+  color: #d9d1ac;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Watches Text Styling */
+.watches-text {
+  font-family: "Arial", sans-serif;
+  color: #3e6948;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Navigation Menu Styling */
+.nav-menu {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+/* Navigation Menu List Styling */
+.nav-menu ul {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+/* Navigation Menu List Item Styling */
+.nav-menu ul li {
+  list-style-type: none;
+}
+
+/* Navigation Link Styling */
+.nav-menu ul li .link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: #d9d1ac;
+  padding-bottom: 15px;
+  margin: 0 25px;
+}
+
+/* Navigation Link Hover and Active Effect */
+.link:hover,
+.active {
+  border-bottom: 2px solid #d9d1ac; /* Bottom border on hover and active */
+}
+
+/* Common Hyperlink Styling */
+.hyper {
+  font-size: medium; /* Medium font size */
+}
+
+/* Common Anchor Tag Styling */
+a {
+  display: block; /* Block display */
+  margin-bottom: 10px; /* Bottom margin */
+  font-size: 18px; /* Font size */
+  text-align: center; /* Center text alignment */
+}
+
+/* Body Styling */
+body {
+  background-color: #0c1c12; 
+  margin: 0;
+  padding: 0;
+}
+
+/* Collection Container */
+.collection-container {
+  width: 100%;
+  height: 100%;
+  margin: 60px auto;
+  padding: 0 30px;
+  background-color: #d9d1ac;
+}
+
+/* Collection Title Styling */
+.collection-title {
+  color: #d9d1ac;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Bodoni Moda", serif;
+}
+
+/*ya dekhi */
+/* Collection Flex Layout */
+.collection-flex {
+  display: flex;
+  gap: 30px;
+}
+
+.products-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 2; /* 66.67% width */
+}
+
+.product-card {
+  background-color: #152f1e;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect for transform and box-shadow properties */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+}
+
+.product-image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 50%, rgb(21, 47, 30, 0.1));
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);/* The scale function increases the element's size by 5% */
+}
+
+.product-content {
+  padding: 25px;
+}
+
+.product-title {
+  color: #d9d1ac;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Bodoni Moda", serif;
+}
+
+.product-badge {
+  color: #8ab992;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  color: #d9d1ac;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid rgb(217, 209, 172, 0.1);
+}
+
+.product-price {
+  color: #d9d1ac;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.product-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #d9d1ac;
+  color: #0c1c12;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+/*ya sama */
+/* Product Button Hover Effect */
+.product-btn:hover {
+  background-color: #c4bb98;
+  transform: translateY(-2px);
+}
+
+/* Info Column Layout */
+.info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Info Card Styling */
+.info-card {
+  background-color: #152f1e;
+  border-radius: 12px;
+  padding: 30px;
+  transition: transform 0.3s ease;
+  height: calc(50% - 15px);
+}
+
+/* About Info Card Styling */
+.info-card.about {
+  background-color: #152f1e;
+}
+
+/* Info Button Styling */
+.info-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #d9d1ac;
+  color: #0c1c12;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Info Button Hover Effect */
+.info-btn:hover {
+  background-color: #c4bb98;
+  transform: translateY(-2px);
+}
+
+/* Product Link Styling */
+.product-link {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent element */
+  display: block;
+}
+
+
+
+/* Brand flex Layout */
+.brand-flex {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  gap: 64px;
+  margin-top: 32px;
+}
+
+/* Brand Link Styling */
+.brand-link {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Brand Link Hover Effect */
+.brand-link:hover {
+  /* Scale up on hover */
+  transform: scale(1.1);
+}
+
+/* Brand Item Styling */
+.brand-item {
+  color: #d9d1ac;
+  font-size: 50px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Brand Item Hover Effect */
+.brand-item:hover {
+  color: #3e6948;
+}
+
+/* Add to Cart Button Styling */
+.cart-button {
+  font-size: 18px;
+  background-color: wheat;
+  color: darkgreen;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+
+/* Add to Cart Button Hover Effect */
+.cart-button:hover {
+  background-color: #d9d1ac;
+  transform: scale(1.05);
+}
+
+
+/* Common Layout Container Styles */
+#layout,
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+  max-width: 1800px;
+  margin: 0 auto;
+  background: linear-gradient(to right, #152f1e, #24472f);
+  border-radius: 8px;
+}
+
+/* Individual Item Container Styles */
+.layout-item,
+.products-items {
+  background: #d9d1ac;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0;
+  /* Set the transform origin to the center */
+  transform-origin: center center;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 4px 8px rgb(12, 28, 18, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 calc(33.33% - 30px); /* Ensure each item takes up 33.33% of the container, accounting for the gap */
+}
+
+/* Image Sizing */
+.layout-item img,
+.products-items img {
+  width: auto;
+  height: 350px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Content Wrapper for Better Margin Control */
+.content-wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 95%;
+  padding: 20px;
+}
+
+/* Hover Effects with Smoother Transition */
+.layout-item:hover,
+.products-items:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgb(12, 28, 18, 0.4);
+  background: white;
+  z-index: 2;
+}
+
+/* Banner Container Styling */
+.banner-container {
+  width: 100%;
+  margin-top: 100px; /* This accounts for the fixed navbar height */
+  display: flex;
+  justify-content: center;
+}
+
+/* Banner GIF Styling */
+.banner-gif {
+  width: 100%;
+  max-width: 1800px; /* You can adjust this value based on your needs */
+  height: auto;
+  object-fit: cover;
+}
+
+/*Home page css*/
+/* Main Container */
+.collection-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+  background-color: #0a2619;
+  color: #e5dcc9;
+}
+
+/* Top Categories Section */
+.top-categories {
+  padding: 32px 0;
+}
+
+.top-categories-title {
+  text-align: center;
+  color: #e5dcc9;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+
+
+.category-card {
+  background-color: #0a2619;
+  border: 1px solid #1b4332;
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  /* Move the category card up slightly on hover */
+  transform: translateY(-5px);
+}
+
+/* Reviews Section */
+.reviews {
+  background-color: #e5dcc9;
+  padding: 48px 0;
+}
+
+.reviews-title {
+  text-align: center;
+  color: #0a2619;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+
+
+.review-card {
+  background-color: #0a2619;
+  padding: 24px;
+  border-radius: 8px;
+  color: #e5dcc9;
+}
+
+/* Our Collection Section */
+.our-collection {
+  padding: 348px 0;
+  background-color: #0a2619;
+}
+
+.collection-title {
+  text-align: center;
+  color: #e5dcc9;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+
+
+/* Product Card */
+.product-card {
+  background-color: #1b4332;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.product-content {
+  padding: 24px;
+}
+
+.product-title {
+  color: #e5dcc9;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.product-description {
+  color: #e5dcc9;
+  margin-bottom: 24px;
+}
+
+.view-details {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #e5dcc9;
+  color: #0a2619;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.view-details:hover {
+  background-color: #d4c5a9;
+}
+
+/* Info Cards */
+.info-card {
+  background-color: #1b4332;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.info-title {
+  color: #e5dcc9;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.info-content {
+  color: #e5dcc9;
+  margin-bottom: 24px;
+}
+
+.info-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #e5dcc9;
+  color: #0a2619;
+  text-decoration: none;
+  border-radius: 4px;
+  /* Smooth transition effect for background-color property */
+  transition: background-color 0.3s ease;
+}
+
+.info-button:hover {
+  background-color: #d4c5a9;
+}
+
+/* Popular Search Section */
+.popular-search {
+  background-color: #152f1e;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.popular-search-title {
+  color: #e5dcc9;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.search-tags {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.search-tag {
+  padding: 8px 16px;
+  background-color: #0a2619;
+  color: #e5dcc9;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.search-tag:hover {
+  background-color: #2d5a4a;
+}
+
+/* About Us Card Styles */
+.about-us {
+  background-color: rgb(27,
+      67,
+      50,
+      0.95);
+  /* Slightly transparent dark green */
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 12px rgb(0, 0, 0, 0.2);
+}
+
+.about-us-title {
+  color: #e5dcc9;
+  /* Cream color */
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  font-family: "Playfair Display", serif;
+  /* Elegant serif font */
+}
+
+.about-us-content {
+  color: #e5dcc9;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  opacity: 0.95;
+  /* Slight transparency for sophistication */
+}
+
+.learn-more-btn {
+  display: inline-block;
+  background-color: #e5dcc9;
+  color: #0a2619;
+  /* Dark green */
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.learn-more-btn:hover {
+  background-color: #0a2619;
+  color: #e5dcc9;
+  border-color: #e5dcc9;
+  transform: translateY(-2px);
+}
+
+
+
+/* Card Container Styles */
+.main-content,
+.sidebar {
+  display: flex;
+  flex-direction: column;/* Set the flex direction to column */
+  gap: 32px;
+}
+
+/* Primary Cards (Product and About Us) */
+.product-card,
+.about-us {
+  /*
+    This CSS rule sets the background color of an element to a dark green shade using the hexadecimal color code #1b4332.
+  */
+  background-color: #1b4332;
+  border-radius: 12px;
+  height: 500px;
+  /* Fixed height for primary cards */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Secondary Cards (Research and Blog) */
+.research-card,
+.blog-card {
+  background-color: #1b4332;
+  border-radius: 12px;
+  height: 200px;
+  /* Fixed height for secondary cards */
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+
+/* Product Card Specific Styles */
+.product-card .product-image {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-card .product-content {
+  padding: 32px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;/*
+  The 'justify-content' property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).
+  'space-between' distributes the items evenly with the first item at the start and the last item at the end.
+*/
+}
+
+/* About Us Card Specific Styles */
+.about-us {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-us-content {
+  flex-grow: 1;
+}
+
+/* Research and Blog Cards Specific Styles */
+.research-card-content,
+.blog-card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #e5dcc9;
+  color: #0a2619;
+  /* 
+    This CSS rule removes any text decoration (such as underline) from the selected text.
+  */
+  text-decoration: none;
+  border-radius: 6px;
+  align-self: flex-start;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d4c5a9;
+}

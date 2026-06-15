@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Product</title>
+    <meta name="Author" content="Srijan Shrestha">
+    <meta name="Description" content="Html document">
+    <meta name="keywords" content="HTML">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Product Information Alignment */
+        #p-name,
+        #p-price,
+        .stars {
+            width: 100%;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        /* Product Name Styling */
+        #p-name {
+            font-size: 22px;
+            line-height: 1.4;
+            font-weight: 600;
+            color: #0c1c12;
+        }
+
+        /* Product Price Styling */
+        #p-price {
+            font-weight: 500;
+            font-size: 20px;
+            color: #3e6948;
+        }
+
+        /* Product Description Styling */
+        #p-description {
+            font-size: 18px;
+            line-height: 1;
+            font-weight: 500;
+            text-align: center;
+            color: #152f1e;
+        }
+
+        .cart-button {
+            font-size: 14px;
+            background-color: wheat;
+            color: wheat; /* Adjusted for better readability */
+            padding: 8px 15px;
+            border: 1px solid darkgreen;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        .cart-button:hover {
+            background-color: darkgreen; /* On hover, the button becomes dark green */
+            color: wheat; /* Text changes to white for contrast */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav"> <!--Navigation bar container-->
+        <div class="nav-logo">
+            <div class="logo-container"><!--Brand name-->
+                <div class="logo">ASPIRE</div>
+                <div class="watches-text">WATCHES</div>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="../index.html" class="link">Home</a></li> <!--navigation link columns-->
+                <li><a href="product.html" class="link active">Product</a></li>
+                <li><a href="blog.html" class="link">Blog</a></li>
+                <li><a href="research.html" class="link">Research</a></li>
+                <li><a href="aboutus.html" class="link">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="banner-container"> <!--Container for banner-->
+        <img src="../IMAGES/PRODUCT/banner-gif.gif" class="banner-gif" alt="watch gif">
+    </div>
+    <div>
+        <h2 style="font-size: 40px; text-align:center; font-weight:500; color:#d9d1ac"><!--Primary heading-->
+            Featured watches
+        </h2>
+        <div id="layout"><!--Container for Featured Watches-->
+            <div class="layout-item">
+                <a href="Hubolt-1.html">
+                    <img src="../IMAGES/PRODUCT/hubolt-1.png" width="250px" height="400px">
+                </a>
+                <p id="p-name">Hublot Fusion Chronograph Arturo <br> Fuente King Gold</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="layout-item">
+                <a href="omega-1.html">
+                    <img src="../IMAGES/PRODUCT/omega-2.png" width="240px" height="400px">
+                </a>
+                <p id="p-name">Omega Speedmaster Moonphase<br>Steel and Pink Gold on leather strap</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="layout-item">
+                <a href="titan2.html">
+                    <img src="../IMAGES/PRODUCT/titan-2.png" width="350px" height="400px">
+                </a>
+                <p id="p-name">Edge Metal Yellow Dial<br> Stainless Steel Strap</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+        </div>
+        <h2 style="font-size: 35px; text-align:center; font-weight:500; color:#d9d1ac"><!--Secondary heading-->
+            Discover the collection
+        </h2>
+        <div id="products"><!--Cotainer for Products-->
+            <div class="products-items">
+                <a href="Hubolt-1.html">
+                    <img src="../IMAGES/PRODUCT/hubolt-1.png" width="250px" height="400px">
+                </a>
+                <p id="p-name">Hublot Fusion Chronograph Arturo </p>
+                <p id="p-description">Fuente King Gold with leather strap<br> 42mm</p>
+                <p id="p-price"><del>$45,000</del> <br> $40,500</p>
+                <div class="stars">★★★★☆</div>
+                <button class="cart-button" onclick="cart()">Add to cart</button>
+                <script>
+                    // Script for add to cart popup
+                    function cart() {
+                        alert("Added to cart");
+                    }
+                </script>
+                </script>
+            </div>
+            <div class="products-items">
+                <a href="Hublot-3.html">
+                    <img src="../IMAGES/PRODUCT/hublot-3.png" width="250px" height="400px">
+                </a>
+                <p id="p-name">Hublot Classic Fusion</p>
+                <p id="p-description">Yellow Gold with leather strap<br> 42mm</p>
+                <p id="p-price"><del>$43,000</del><br>$40,000</p>
+                <div class="stars">★★★★☆</div>
+                <button class="cart-button" onclick="cart()">Add to cart</button>
+                <script>
+                    // Script for add to cart popup
+                    function cart() {
+                        alert("Added to cart");
+                    }
+                </script>
+            </div>
+
+            <!-- Product item: Hublot classic fusion aerofusion chronograph -->
+            <div class="products-items">
+                <!-- Product image -->
+                <a href="hublot-2.html">
+                    <img src="../IMAGES/PRODUCT/hublot-2.png" width="250px" height="400px">
+                </a>
+                <!-- Product name -->
+                <p id="p-name">Hublot classic fusion aerofusion chronograph</p>
+                <!-- Product description -->
+                <p id="p-description">Ceramic with leather Strap<br> 45mm</p>
+                <!-- Product price -->
+                <p id="p-price"><del>$20,000</del><br>$15,600</p>
+                <!-- Product rating -->
+                <div class="stars">★★★★☆</div>
+                <!-- Add to cart button -->
+                <button class="cart-button" onclick="cart()">Add to cart</button>
+                <script>
+                    // Script for add to cart popup
+                    function cart() {
+                        alert("Added to cart");
+                    }
+                </script>
+            </div>
+            <div class="products-items">
+                <a href="omega-2.html">
+                    <img src="../IMAGES/PRODUCT/omega-1.avif" width="350px" height="380px">
+                </a>
+                <p id="p-name">Speedmaster 38</p>
+                <p id="p-description">Stainless Steel Strap<br>Scratch‑resistant sapphire crystal<br> 38mm</p>
+                <p id="p-price"><del>$105,000</del><br>$100,000</p>
+                <div class="stars">★★★★☆</div>
+                <button class="cart-button" onclick="cart()">Add to cart</button>
+                <script>
+                    // Script for add to cart popup
+                    function cart() {
+                        alert("Added to cart");
+                    }
+                </script>
+            </div>
+            <div class="products-items">
+                <a href="omega-1.html">
+                    <img src="../IMAGES/PRODUCT/omega-2.png" width="290px" height="350px">
+                </a>
+                <p id="p-name">Omega Speedmaster Moonphase</p>
+                <p id="p-description">Steel and Pink Gold<br> 44.5mm</p>
+                <p id="p-price"><del>$17,000</del><br> $15,600</p>
+                <div class="stars">★★★★☆</div>
+                <button class="cart-button" onclick="cart()"> Add to cart</button>
+                <script>
+                    // Script for add to cart popup
+                    function cart() {
+                        alert("Added to cart");
+                    }
+                </script>
+            </div>
+            <div class="products-items">
+                <a href="omega-3.html">
+                    <img src="../IMAGES/PRODUCT/omega-3.avif" width="350px" height="380px">
+                </a>
+                <p id="p-name">Omega Constellation Globemaster</p>
+                <p id="p-description">Steel on leather strap<br>39.5mm</p>
+                <p id="p-price"><del>$9,000</del><br>$7,500</p>
+                <div class="stars">★★★★☆</div>
+                <button class="cart-button" onclick="cart()">Add to cart</button>
+                <script>
+                    // Script for add to cart popup
+                    function cart() {
+                        alert("Added to cart");
+                    }
+                </script>
+            </div>
+            <div class="products-items">
+                <a href="titan1.html">
+                    <img src="../IMAGES/PRODUCT/titan-1.png" width="250px" height="400px">
+                </a>
+                <p id="p-name">Titan Quartet Grey Dial </p>
+                <p id="p-description">Steel on leather strap<br> 42.5mm</p>
+                <p id="p-price"><del>$500</del> <br> $352</p>
+                <div class="stars">★★★★☆</div>
+                <button class="cart-button" onclick="cart()">Add to cart</button>
+                <script>
+                    // Script for add to cart popup
+                    function cart() {
+                        alert("Added to cart");
+                    }
+                </script>
+            </div>
+            <div class="products-items">
+                <a href="titan2.html">
+                    <img src="../IMAGES/PRODUCT/titan-2.png" width="250px" height="400px">
+                </a>
+                <p id="p-name">Edge Metal Yellow Dial</p>
+                <p id="p-description">Stainless Steel<br>38.00 mm</p>
+                <p id="p-price"><del>$300</del><br>$180 </p>
+                <div class="stars">★★★☆☆</div>
+                <button class="cart-button" onclick="cart()">Add to cart</button>
+                <script>
+                    // Script for add to cart popup
+                    function cart() {
+                        alert("Added to cart");
+                    }
+                </script>
+            </div>
+            <div class="products-items">
+                <a href="titan3.html">
+                    <img src="../IMAGES/PRODUCT/titan-3.png" width="250px" height="400px">
+                </a>
+                <p id="p-name">Titan Neo Curve Quartz Analog</p>
+                <p id="p-description"></p>Stainless Steel<br>42.00 mm</p>
+                <p id="p-price"><del>$300</del><br> $210 </p>
+                <div class="stars">★★★★★</div>
+                <button class="cart-button" onclick="cart()">Add to cart</button>
+                <script>
+                    // Script for add to cart popup
+                    function cart() {
+                        alert("Added to cart");
+                    }
+                </script>
+            </div>
+        </div>
+</body>
+<footer>
+    <table width="100%" cellpadding="20" cellspacing="0">
+        <tr>
+            <!-- Newsletter Column -->
+            <td width="33%" valign="top" style="padding-left: 40px;">
+                <h2>Subscribe to our Newsletter</h2>
+                <form class="subscribe-form" onsubmit="return validateEmail()">
+                    <input type="text" id="email" placeholder="Enter your email address"
+                        style="width: 100%; padding: 10px; margin-bottom: 10px;">
+                    <button type="submit" class="subscribe-button">Subscribe</button>
+
+                </form>
+            </td>
+
+            <!-- Useful Links Column -->
+            <td width="33%" valign="top" align="center">
+                <h2>USEFUL LINKS</h2>
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <a href="HTML/product.html" class="link">Products</a>
+                    <a href="HTML/blog.html" class="link">Blog</a>
+                    <a href="HTML/research.html" class="link">Research</a>
+                    <a href="HTML/aboutus.html" class="link">About us</a>
+                </div>
+            </td>
+
+            <!-- Contact Column -->
+            <td width="33%" valign="top" align="center">
+                <h2>CONTACT</h2>
+                <div style="margin-top: 10px; display: flex; justify-content: center; gap: 10px;">
+                    <a href="#" class="link">Instagram</a> |
+                    <a href="#" class="link">Facebook</a> |
+                    <a href="#" class="link">Linkedin</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center; padding-top: 80px;">
+                <p style="margin: 0;">&copy; 2025 AspireWatches. All rights reserved.</p>
+            </td>
+        </tr>
+    </table>
+</footer>
+<script src="../JAVASCRIPT/script.js"></script>
+
+</html>

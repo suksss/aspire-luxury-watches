@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Author" content="Sukrish Shrestha">
+        <meta name="Portfolio" content="Html document">
+        <meta name="keywords" content="HTML">
+    <title>Portfolio Website</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif; /* Simplified font family */
+        }
+
+        /* Main background with gradient */
+        body {
+            /* Create a diagonal gradient from dark to lighter green */
+            background: linear-gradient(135deg, #0c1c12 0%, #000000 100%);
+            min-height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center;     /* Center vertically */
+            padding: 40px 20px;      /* Top/bottom 40px, left/right 20px */
+        }
+
+        /* Main container that holds all content */
+        .container {
+            background: #24472f;     /* Container background color */
+            border-radius: 24px;     /* Rounded corners */
+            padding: 60px;           /* Space inside container */
+            width: 100%;            
+            max-width: 1400px;       /* Maximum width of container */
+            /* Multiple shadows for depth effect */
+            box-shadow: 0 20px 40px rgb(12, 28, 18, 0.4),
+                       0 8px 16px rgb(12, 28, 18, 0.3);
+        }
+
+        /* Content layout */
+        .content {
+            display: flex;           /* Use flexbox for layout */
+            justify-content: space-between;
+            align-items: center;     /* Center items vertically */
+            gap: 80px;              /* Space between flex items */
+        }
+
+        /* Text content section */
+        .text-content {
+            flex: 1;                /* Take up remaining space */
+        }
+
+        /* Large greeting text */
+        h1 {
+            font-size: 80px;        /* Larger text size */
+            color: #d9d1ac;         /* Cream color */
+            margin-bottom: 16px;
+            letter-spacing: 1px;    /* Space between letters */
+        }
+
+        /* Name highlight effect */
+        .highlight {
+            color: #ffde59;         /* Light green color */
+            text-shadow: 0 2px 4px rgb(12, 28, 18, 0.4); /* Text shadow for depth */
+        }
+
+        /* Subheading styles */
+        h2 {
+            font-size: 70px;
+            color: #d9d1ac;
+            margin-bottom: 32px;
+            letter-spacing: 1px;
+        }
+
+        /* More Info button styles */
+        .contact-btn {
+            background: #3e6948;
+            color: #d9d1ac;
+            padding: 20px 40px; /* Increased size */
+            border-radius: 12px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            border: none;           /* Remove default button border */
+            cursor: pointer;        /* Show hand cursor on hover */
+            /* Button shadow */
+            box-shadow: 0 4px 8px rgb(12, 28, 18, 0.2);
+            /* Smooth transition for hover effects */
+            transition: all 0.3s ease;
+        }
+
+        /* Button hover effect */
+        .contact-btn:hover {
+            background: #152f1e;
+            transform: translateY(-2px);  /* Move button up slightly */
+            box-shadow: 0 6px 12px rgb(12, 28, 18, 0.3);
+        }
+
+        /* Social media links section */
+        .social-links {
+            margin-top: 60px;
+            display: flex;
+            gap: 24px;
+        }
+
+        /* Individual social media link */
+        .social-links a {
+            color: #d9d1ac;
+            text-decoration: none;
+            font-size: 24px;
+            padding: 12px;
+            border-radius: 50%;    /* Make it circular */
+            background: #152f1e;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgb(12, 28, 18, 0.2);
+        }
+
+        /* Social link hover effect */
+        .social-links a:hover {
+            background: #3e6948;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgb(12, 28, 18, 0.3);
+        }
+
+        /* Profile image container */
+        .image-container {
+            width: 450px;
+            height: 450px;
+        }
+
+        /* Profile image frame */
+        .profile-frame {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;    /* Make it circular */
+            background: #3e6948;
+            position: relative;
+            overflow: hidden;      /* Hide overflow */
+            box-shadow: 0 20px 40px rgb(12, 28, 18, 0.4);
+        }
+
+        /* Profile image */
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;     /* Cover the frame */
+            border-radius: 50%;
+            border: 12px solid #152f1e;
+        }
+
+        /* Modal popup styles */
+        .modal {
+            display: none;         /* Hidden by default */
+            position: fixed;       /* Fixed position over everything */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(12, 28, 18, 0.8); /* Semi-transparent background */
+            z-index: 1000;        /* Show on top of everything */
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Modal content box */
+        .modal-content {
+            background: #24472f;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgb(12, 28, 18, 0.4);
+            position: relative;
+            max-width: 600px; /* Increased width */
+            width: 90%;
+        }
+
+        /* Modal title */
+        .modal-title {
+            color: #d9d1ac;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Contact information text */
+        .contact-info {
+            color: #d9d1ac;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Close button */
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #d9d1ac;
+            font-size: 24px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .close-btn:hover {
+            color: #3e6948;
+        }
+
+        /* Go back link styling */
+        .go-back {
+            display: block;
+            margin-top: 40px;
+            text-align: left;
+            font-size: 24px;
+            color: #d9d1ac;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .go-back:hover {
+            color: #3e6948;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <div class="content">
+            <!-- Text content section -->
+            <div class="text-content">
+                <h1>Hi,</h1>
+                <h2>I'm <span class="highlight">Srijan</span></h2>
+                <h2>Creative Director</h2>
+                <button class="contact-btn" onclick="openModal()">More Info</button>
+                <div class="social-links">
+                    <a href="#" title="LinkedIn">in</a>
+                </div>
+            </div>
+            <!-- Profile image section -->
+            <div class="image-container">
+                <div class="profile-frame">
+                    <img src="../IMAGES/ABOUT US/srijan.jpg" alt="Profile" class="profile-image">
+                </div>
+            </div>
+        </div>
+        <!-- Go back link -->
+        <a href="aboutus.html" class="go-back">Go back</a>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <h3 class="modal-title">Education</h3>
+            <p class="contact-info">Islington College - Bsc. (Hons.) Networking and IT Security (2024-27)</p>
+            <h3 class="modal-title">Work Experience</h3>
+            <p class="contact-info">Creative Director at Aspire Watches</p>
+            <h3 class="modal-title">Skills</h3>
+            <p class="contact-info">Creative Thinking, HTML, CSS, JS, Java, MYSQL</p>
+            <h3 class="modal-title">Languages</h3>
+            <p class="contact-info">English, Nepali</p>
+            <h3 class="modal-title">Contact Information</h3>
+            <p class="contact-info">Phone: +977 9707612656</p>
+            <p class="contact-info">Email: srijanstha17@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for modal functionality -->
+    <script>
+        // Get the modal element
+        const modal = document.getElementById('contactModal');
+
+        // Function to open the modal
+        function openModal() {
+            modal.style.display = 'flex';  // Show the modal
+            // Add fade-in animation
+            modal.style.opacity = 0;
+            setTimeout(() => {
+                modal.style.opacity = 1;
+            }, 10);
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            modal.style.opacity = 0;  // Start fade-out
+            setTimeout(() => {
+                modal.style.display = 'none';  // Hide the modal after fade
+            }, 300);
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Close modal when pressing Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
